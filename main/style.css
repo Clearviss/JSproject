@@ -1,0 +1,96 @@
+/* Resetowanie domyślnych stylów przeglądarki */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styl dla całej strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+/* Styl dla nagłówka */
+header {
+    background-color: #91b0f1;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Styl dla loga tekstowego */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* Styl dla menu nawigacyjnego */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    border: 2px solid;
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+/* Styl dla głównej treści */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Styl dla panelu bocznego */
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Styl dla stopki */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Styl dla linków w stopce */
+footer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Styl dla linków w stopce po najechaniu */
+footer a:hover {
+    text-decoration: underline;
+}
