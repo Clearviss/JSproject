@@ -1,2 +1,2 @@
 # A&D Solutions presents JavaScript Simulations.
- <img src="logo">
+ <img src="logo.png">
