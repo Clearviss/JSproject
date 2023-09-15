@@ -7,8 +7,9 @@
 
 /* Styl dla całej strony */
 body {
+    
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #abacb1;
     margin: 0;
     padding: 0;
     
@@ -17,11 +18,16 @@ body {
 
 /* Styl dla nagłówka */
 header {
-    background-color: #91b0f1;
-    color: #fff;
+    background-image: url('images/code2_bg.png');
+    background-position: top center;
+    background-size: auto;
+    background-color: #abacb1;
+    color: #000000;
     padding: 20px 0;
     text-align: center;
+    
 }
+
 
 /* Styl dla loga tekstowego */
 h1 {
