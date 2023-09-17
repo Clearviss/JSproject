@@ -36,8 +36,9 @@
             padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 20px;
             font-size: 16px;
+            width: 200px;
         }
 
         #check {
@@ -54,16 +55,26 @@
             font-size: 16px;
             margin-top: 10px;
         }
+
+        #next {
+            background-color: #83afe9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <h1>Niemiecki Quiz Ü</h1>
     <div id="quiz-container">
         <p id="question"></p>
-        <input type="text" id="answer" placeholder="Wprowadź niemieckie słowo">
+        <input type="text" id="answer" placeholder="wprowadź tłumaczenie">
         <button id="check">Sprawdź</button>
         <p id="result"></p>
-        <button id="next">Następne pytanie</button>
+        <button id="next">Pominięcie pytania</button>
     </div>
     <script>
         const words = [
