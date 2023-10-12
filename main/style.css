@@ -1,108 +1,156 @@
-/* Resetowanie domyślnych stylów przeglądarki */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styl dla całej strony */
+
 body {
-    
+    background-position: top center;
+    background-size: auto;
+    background-image: url('images/code2_bg.png');
     font-family: Arial, sans-serif;
     background-color: #abacb1;
     margin: 0;
     padding: 0;
-    
-    
+
+
 }
 
-/* Styl dla nagłówka */
+section {
+    text-align: center;
+
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+section .sup {
+    width: 30%;
+    height: 150px;
+    float: left;
+    margin: auto;
+    margin-left: 13%;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.sup .card {
+    color: white;
+    margin: auto;
+    top: 0;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 7%;
+    position: absolute;
+    z-index: 2;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    pointer-events: none;
+    overflow: hidden;
+
+}
+
+#card-1 {
+    font-family: 'Pixelify Sans', sans-serif;
+
+}
+
+#card-2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes animacja {
+    from {
+        filter: blur(6px);
+        -webkit-filter: blur(6px);
+        border-radius: 1rem;
+    }
+
+    to {
+        filter: blur(0);
+        -webkit-filter: blur(0);
+        border-radius: 1rem;
+    }
+}
+
+.sup .back {
+    background: rgba(0, 0, 0, 0.4) url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.openreplay.com%2Fimages%2Fa-practical-introduction-to-svelte%2Fimages%2Fhero.png&f=1&nofb=1&ipt=a70e8583024ca08033124044c68511f81717a2fa63f43d55f4d06b55cbc89d68&ipo=images);
+    background-blend-mode: darken;
+    filter: blur(6px);
+    transition: transform .4s;
+    -webkit-filter: blur(6px);
+    height: 100%;
+    background-size: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+
+}
+
+.sup .back2 {
+    background: rgba(0, 0, 0, 0.4) url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Falltop.com%2Fviral%2Fwp-content%2Fuploads%2F2013%2F02%2Ffoto-german-flag.jpg&f=1&nofb=1&ipt=879ee5e8172d062509a05c93fc153fe8fed02aa504e952b155072f5b715d0604&ipo=images);
+    background-blend-mode: darken;
+    filter: blur(6px);
+    transition: transform .4s;
+    -webkit-filter: blur(6px);
+    height: 100%;
+    background-size: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+
+}
+
+.sup .back:hover {
+    animation-name: animacja;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: scale(1.2);
+    border-radius: 1rem;
+}
+
+.sup .back2:hover {
+    animation-name: animacja;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: scale(1.2);
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+.menu {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    padding: auto;
+    height: 150px;
+}
+
+
 header {
-    background-image: url('images/code2_bg.png');
-    background-position: top center;   
-    background-size: auto;
-    background-color: #abacb1;
+
+
+
     color: #000000;
     padding: 20px 0;
     text-align: center;
-    height: 660px;
-    
-    
-    
-}
+    height: auto;
 
 
-/* Styl dla loga tekstowego */
-#menu_symulacji {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-
-/* Styl dla menu nawigacyjnego */
-nav ul {
-    list-style-type: none;
-    text-align: center;
 
 }
 
-nav ul li {
-    display: inline-block;
-    margin:  10px;
-    border: 2px solid;
-    padding: 5px;
-}
-
-#panel_boczny {
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
-    transition: color 0.4s ease;
-    margin-top: 20px;
-}
-
-nav ul li a:hover {
-    color: #ff0000;
-    
-}
-
-.container1 h2 {
-    color: rgb(0, 0, 0);
-    padding-bottom: 50px;
-}
 
 
-/* Styl dla głównej treści */
-.container1 {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 50px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.container2 {
-    margin-bottom: 20px;
-    color: white;
-}
-
-/* Styl dla panelu bocznego */
-.sidebar {
-    background-color: #333;
-    color: #ffffff;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-    border-radius: 10px;
-    width: 800px;
-    margin: 20px auto;
-    
-    
-}
-
-/* Styl dla stopki */
 footer {
     background-color: #333;
     color: #fff;
@@ -112,11 +160,11 @@ footer {
     border-radius: 10px;
     width: 800px;
     margin: 20px auto;
-    
-    
+
+
 }
 
-/* Styl dla linków w stopce */
+
 footer a {
     text-decoration: none;
     color: #ffffff;
@@ -125,7 +173,6 @@ footer a {
     border-radius: 10px;
 }
 
-/* Styl dla linków w stopce po najechaniu */
 footer a:hover {
     text-decoration: underline;
 }
