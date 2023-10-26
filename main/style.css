@@ -1,5 +1,5 @@
 body, html {
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Chakra Petch';
     color: #FEE715;
     background-position: center;
   background-repeat: no-repeat;
@@ -8,6 +8,11 @@ body, html {
     background-image: url(background.jpg);
     height: 100%;
     
+}
+
+#header {
+    font-family: 'Nabla', sans-serif;
+    font-size: xx-large;
 }
 
 .container {
